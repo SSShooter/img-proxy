@@ -16,4 +16,4 @@ await fastify.register(proxy, {
   http2: false, // optional
 })
 
-await fastify.listen({ port: 3000 })
+await fastify.listen({ port: process.env.PORT || 2333, address: '0.0.0.0' })
