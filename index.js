@@ -16,10 +16,4 @@ await fastify.register(proxy, {
   http2: false, // optional
 })
 
-fastify.register(async function (fastify) {
-  fastify.get('/aaa', (req, reply) => {
-    reply.send({ hello: 'world' })
-  })
-})
-
-fastify.listen({ port: 3000 })
+await fastify.listen({ port: 3000 })
