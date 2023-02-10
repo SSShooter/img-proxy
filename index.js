@@ -5,7 +5,7 @@ const fastify = Fastify()
 
 await fastify.register(cors, {
   // put your options here
-  origin: ['https://anime-characters.vercel.app', 'http://localhost:5000'],
+  origin: ['https://anime-characters.vercel.app', 'https://anime-characters.ssshooter.com/', 'http://localhost:5000'],
   methods: ['GET'],
 })
 
